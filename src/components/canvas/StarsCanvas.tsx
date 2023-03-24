@@ -1,7 +1,7 @@
 import { FC } from 'react'
 
-const Stars: FC = () => {
+const StarsCanvas: FC = () => {
     return <div>Stars</div>
 }
 
-export default Stars
+export default StarsCanvas
