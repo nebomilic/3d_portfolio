@@ -27,6 +27,6 @@ In comparison to the original code I made a couple of small changes:
 - couple of minor adjustment because typescript 🤷
 
 
-Thats it!
+That's it!
 
 
