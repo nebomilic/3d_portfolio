@@ -114,7 +114,16 @@ const technologies = [
     },
 ]
 
-const experiences = [
+export type ExperienceType = {
+    title: string
+    company_name: string
+    icon: string
+    iconBg: string
+    date: string
+    points: string[]
+}
+
+const experiences: ExperienceType[] = [
     {
         title: 'React.js Developer',
         company_name: 'Starbucks',

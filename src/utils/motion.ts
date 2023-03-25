@@ -1,6 +1,6 @@
 type Direction = 'left' | 'right' | 'up' | 'down'
 
-export const textVariant = (delay: number) => {
+export const textVariant = (delay?: number) => {
     return {
         hidden: {
             y: -50,
@@ -93,16 +93,14 @@ export const slideIn = (
 }
 
 export const staggerContainer = (
-    staggerChildren: React.ReactNode,
-    delayChildren: React.ReactNode
-) => {
-    return {
-        hidden: {},
-        show: {
-            transition: {
-                staggerChildren: staggerChildren,
-                delayChildren: delayChildren || 0,
-            },
+    staggerChildren?: number,
+    delayChildren?: number
+) => ({
+    hidden: {},
+    show: {
+        transition: {
+            staggerChildren: staggerChildren,
+            delayChildren: delayChildren || 0,
         },
-    }
-}
+    },
+})
